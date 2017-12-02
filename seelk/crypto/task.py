@@ -34,14 +34,14 @@ def Cryptobot(currencie_name):
                 # !!!! Change email here for test !!!!
                 to_email = Email("test@test.com")
                 subject = "An Alert have been raise"
-                content = Content("text/plain", "An Alert have been raise, the bitcoin is under/upper " + str(amount))
+                content = Content("text/plain", "An Alert have been raise, the bitcoin is now at " + str(amount) + currencie_name)
                 mail = Mail(from_email, subject, to_email, content)
                 response = sg.client.mail.send.post(request_body=mail.get())
                 # We check if the mail have been send
                 if response.status_code < 200 or response.status_code >= 300:
                     Alert.objects.create(message="Sending the mail have fail", currencie=currencie_name)
                 else:
-                    Alert.objects.create(message=content, currencie=currencie_name)
+                    Alert.objects.create(message="An Alert have been raise, the bitcoin is now at " + str(amount) + currencie_name , currencie=currencie_name)
             # we launch the task after 5 second if everything work
             Cryptobot.apply_async((currencie_name,), countdown=5)
     except ObjectDoesNotExist:

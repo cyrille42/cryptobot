@@ -15,6 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     password = serializers.CharField(min_length=8, write_only=True, style={'input_type': 'password'})
 
+    # We rewrite create and update to hash the password
     def create(self, validated_data):
         password = validated_data.pop('password', None)
         instance = self.Meta.model(**validated_data)

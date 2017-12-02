@@ -1,14 +1,12 @@
-from django.shortcuts               import render
 from django.contrib.auth.models     import User
 
 from rest_framework.generics        import ListCreateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.permissions     import IsAuthenticatedOrReadOnly
+# from rest_framework.permissions     import IsAuthenticatedOrReadOnly
 
 from .models                        import Alert, Rule
 
 from .serializers                   import AlertSerializer, UserSerializer, RuleSerializer
 
-from django.http import HttpResponse
 
 class AlertList(ListCreateAPIView):
     # permission_classes = (IsAuthenticatedOrReadOnly,)
