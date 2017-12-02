@@ -28,7 +28,7 @@ class UserDetail(RetrieveUpdateDestroyAPIView):
     # permission_classes = (IsAuthenticatedOrReadOnly,)
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    lookup_field = 'pk'
+    lookup_field = 'username'
 
 class RuleList(ListCreateAPIView):
     # permission_classes = (IsAuthenticatedOrReadOnly,)
@@ -39,4 +39,4 @@ class RuleDetail(RetrieveUpdateDestroyAPIView):
     # permission_classes = (IsAuthenticatedOrReadOnly,)
     queryset = Rule.objects.all()
     serializer_class = RuleSerializer
-    lookup_field = 'pk'
+    lookup_field = 'currencie'
