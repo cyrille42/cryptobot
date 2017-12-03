@@ -3,11 +3,16 @@ INSTALLATION FACILE:
 
 Pour une installation facile sur Ubuntu:
 
+Crée et activer un environement python, ou utilisé les commande suivante:
+- mkdir ~/.envtest
+- python3 -m venv ~/.envtest/cryptobot
+- source ~/.envtest/cryptobot/bin/activate
+
 Dans le répertoire seelk écrivé dans un shell
 
 - sh install.sh
 
-Cela comprend la création d'un nouvelle env python, l'installation et la configuration de RabbitMQ, l'installation des requirements, l'initialisation du projet, et la mise en place de l’environnement sur un shell.
+Cela comprend l'installation et la configuration de RabbitMQ, l'installation des requirements, l'initialisation du projet, et la mise en place de l’environnement sur un shell.
 
 IMPORTANT:
 Pour toute nouvelle ouverture de shell utilisé la commande: -shell.sh (met en place les variable d'environnement)
