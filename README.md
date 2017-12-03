@@ -1,5 +1,6 @@
 INSTALLATION FACILE:
 
+
 Pour une installation facile sur Ubuntu:
 
 Dans le répertoire seelk écrivé dans un shell
@@ -13,6 +14,7 @@ Pour toute nouvelle ouverture de shell utilisé la commande: -shell.sh (met en p
 
 
 INSTALATION ETAPE PAR ETAPE:
+
 
 En cas de problème procédé par étape.
 
@@ -37,6 +39,7 @@ Lancer Celery: -celery -A seelk worker --loglevel=info
 
 UTILISATION:
 
+
 Dans un 2éme shell lancé le serveur: -shell.sh
                     -./manage.py runserver
                    
@@ -46,10 +49,12 @@ Dans un 3 éme shell lancé les commandes: -shell.sh
                                         
 MAIL:
 
+
 N'oublier pas de mettre votre mail pour testé la fonctionnalité du mail, disponibles dans crypto.task ligne 35
     
     
 BONUS:
+
 
 Il est aussi possible d'utilisé d'autre currencie , ainsi que de changé les limites maximum et minimum de déclenchement d'alerte
 
@@ -58,7 +63,9 @@ Il sera important de nommer la currencie par sont raccourcis, tout les nom de cu
 
 Étape 2: Il vous suffit simplement de rajouté un argument en lançant la commande run_cryptobot , comme l'exemple suivant:-./manage.py run_cryptobot EUR
 
+
 DETAIL
+
 
 Pour accédé au détail des rules , il faut rajouté leur nom après l'url , comme ceci http://127.0.0.1:8000/crypto/rules/EUR/
 
