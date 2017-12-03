@@ -21,9 +21,9 @@ En cas de problème procédé par étape.
 Téléchargé et installé RabbitMQ ici: https://www.rabbitmq.com/download.html
 
 Crée un environnement python:
--mkdir ~/.virtualenvs
--python3 -m venv ~/.virtualenvs/cryptobot
--source ~/.virtualenvs/cryptobot/bin/activate
+*mkdir ~/.virtualenvs
+*python3 -m venv ~/.virtualenvs/cryptobot
+*source ~/.virtualenvs/cryptobot/bin/activate
                             
 Installé les modules:
 -pip3 install --upgrade pip  (Si besoin)
