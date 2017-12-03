@@ -21,36 +21,36 @@ En cas de problème procédé par étape.
 Téléchargé et installé RabbitMQ ici: https://www.rabbitmq.com/download.html
 
 Crée un environnement python:
-*mkdir ~/.virtualenvs
-*python3 -m venv ~/.virtualenvs/cryptobot
-*source ~/.virtualenvs/cryptobot/bin/activate
+- mkdir ~/.virtualenvs
+- python3 -m venv ~/.virtualenvs/cryptobot
+- source ~/.virtualenvs/cryptobot/bin/activate
                             
 Installé les modules:
--pip3 install --upgrade pip  (Si besoin)
--pip install -r requirements.txt
+- pip3 install --upgrade pip  (Si besoin)
+- pip install -r requirements.txt
 
 Paramétré RabbitMQ:
--sudo rabbitmq-server -detached
--sudo rabbitmqctl add_user admin admin
--sudo rabbitmqctl add_vhost vhost
--sudo rabbitmqctl set_permissions -p vhost admin ".*" ".*" ".*"
+- sudo rabbitmq-server -detached
+- sudo rabbitmqctl add_user admin admin
+- sudo rabbitmqctl add_vhost vhost
+- sudo rabbitmqctl set_permissions -p vhost admin ".*" ".*" ".*"
 
-Lancer la commande: -shell.sh
+Lancer la commande: - shell.sh
 
-Lancer Celery: -celery -A seelk worker --loglevel=info
+Lancer Celery: - celery -A seelk worker --loglevel=info
 
 
 UTILISATION:
 
 
 Dans un 2éme shell lancé le serveur: 
--shell.sh
--./manage.py runserver
+- shell.sh
+- ./manage.py runserver
                    
 Dans un 3 éme shell lancé les commandes: 
--shell.sh
--./manage.py crypto_init
--./manage.py run_cryptobot
+- shell.sh
+- ./manage.py crypto_init
+- ./manage.py run_cryptobot
                                         
 MAIL:
 
