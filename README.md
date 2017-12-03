@@ -47,6 +47,7 @@ Lancer Celery: - celery -A seelk worker --loglevel=info
 
 UTILISATION:
 
+Ne pas oublier d'être dans votre environement python. (source ~/.envtest/cryptobot/bin/activate)
 
 Dans un 2éme shell lancé le serveur: 
 - shell.sh
