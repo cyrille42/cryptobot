@@ -1,7 +1,4 @@
 sudo apt-get install rabbitmq-server
-mkdir ~/.virtualenvs
-python3 -m venv ~/.virtualenvs/cryptobot
-source ~/.virtualenvs/cryptobot/bin/activate
 pip3 install --upgrade pip
 pip install -r requirements.txt
 export PATH=$PATH:/usr/local/sbin
