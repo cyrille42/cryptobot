@@ -40,7 +40,7 @@ Paramétré RabbitMQ:
 - sudo rabbitmqctl add_vhost vhost
 - sudo rabbitmqctl set_permissions -p vhost admin ".*" ".*" ".*"
 
-Lancer la commande: - shell.sh
+Lancer la commande: - sh shell.sh
 
 Lancer Celery: - celery -A seelk worker --loglevel=info
 
@@ -50,11 +50,11 @@ UTILISATION:
 Ne pas oublier d'être dans votre environement python. (source ~/.envtest/cryptobot/bin/activate)
 
 Dans un 2éme shell lancé le serveur: 
-- shell.sh
+- sh shell.sh
 - ./manage.py runserver
                    
 Dans un 3 éme shell lancé les commandes: 
-- shell.sh
+- sh shell.sh
 - ./manage.py crypto_init
 - ./manage.py run_cryptobot
                                         
