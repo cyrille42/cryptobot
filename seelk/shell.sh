@@ -1,2 +1,2 @@
-export SENDGRID_API_KEY='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'
+export SENDGRID_API_KEY='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'
 export PATH=$PATH:/usr/local/sbin
